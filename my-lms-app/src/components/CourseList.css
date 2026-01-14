@@ -1,0 +1,48 @@
+.course-list {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.course-list-header {
+  margin-bottom: 30px;
+}
+
+.course-list-header h2 {
+  font-size: 32px;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.course-count {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+@media (max-width: 1024px) {
+  .course-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .course-list {
+    padding: 15px;
+  }
+  
+  .course-list-header h2 {
+    font-size: 24px;
+  }
+  
+  .course-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
