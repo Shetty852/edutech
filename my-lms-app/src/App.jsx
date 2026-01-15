@@ -123,7 +123,7 @@ function App() {
           <div className="header-left">
             <h1 className="app-title">🎓 My Learning Management System</h1>
             <p className="app-subtitle">
-              {user.role === 'teacher' ? `Welcome Teacher: ${user.name}` : `Welcome Student: ${user.name}`}
+              Welcome back, {user.name}!
             </p>
           </div>
           <button onClick={handleLogout} className="logout-button">
